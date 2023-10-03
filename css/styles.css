@@ -3,19 +3,9 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-    font-family: 'Noto Sans Manichaean', sans-serif;
-    font-family: 'Playfair', serif;
-    
+    font-family: 'Noto Sans SC', sans-serif;
 }
-.card-img{
-    width: 100%;
-    height: 400px;
-
-}
-
-
-
-h1, h2{
+h1 , h2{
     font-size: 30px;
     text-align: center;
     padding: 20px;
@@ -36,6 +26,7 @@ strong{
     align-content: center;
     justify-content: center;
     background: rgb(0, 0, 0);
+    margin: 0;
 }
 .responsive-li{
     font-size: 20px;
@@ -52,11 +43,6 @@ strong{
     margin-right: 80px;
 }
 /*INICIO*/
-.portada-inicio img{
-    width: 100%;
-    height: 600px;
-}
-
 .sugerencias{
     display: flex;
     justify-content: center;
@@ -69,72 +55,120 @@ strong{
     width: 200px;
     height: 200px;
 }
-
+.d-block{
+    width: 100%;
+    height: 700px;
+}
 /*MENU*/
+
+button.btn {
+    background-color: rgb(189, 82, 11);
+    border: none;
+    width: auto;
+    border-radius: none;
+    
+}
+button.btn a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
 .menu-opciones{
     display: flex;
 }
 .menu-opciones div{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     margin-top:40px;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
     border: none;
 }
 .menu-opciones img{
-    width:311px;
-    height: 400px;
+    width:350px;
+    height: 450px;
 }
-.card-img-overlay h3{
-    text-align: center;
-    font-size: 30px;
-    color: black;
+.boton-estilo{
+    width: 350px;
+    height: 40px;
+    color: rgb(189, 82, 11);
+    background: black;
+    border:1px solid rgb(189, 82, 11);
+}
+.boton-estilo a{
+    list-style: none;
+}
+button.btn{
+    color: red;
+}
+.container img{
+    width: 200px;
+    height: 200px;
+
+}
+.cards img{
+    width: 500px;
+    height: 200px;
+}
+.titulo-tarjeta{
+    font-size: 25px;
+    color: rgb(189, 82, 11);
+}
+.linea{
+    background-image: url(https://popmenucloud.com/ckfbqnia/cdaa464b-da11-4c5f-b275-15cdfffbd18e.png);
+    width: 280px;
+    height: 40px;
+    background-size: cover;
+    margin: auto;
+    margin-bottom: 80px;
 }
 /*RESERVAS*/ /*NOSOTROS*/
 form{
-    width: 100%;
-    margin: auto;
-    padding: 50px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background: black;
+    width: 700px;
+    border-radius: 5px;
 }
-
-.formulario-reservas{
-    font-size: 15px;;
-    background:rgb(255, 255, 255);
+.formulario{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
-input,select{
-    display: block;
+input, select{
     padding: 10px;
-    color: rgb(0, 0, 0);
     border: 2px solid rgb(189, 82, 11);
-    margin: auto;
-    width: 50%;
-    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    width:650px;
+    margin-top: 20px;
+    height: 40px;
 }
 label{
-    display: block;
-    color: rgb(0, 0, 0);
-    margin: auto;
-    width: 50%;
+    color: white;
 }
-.boton{
-    display: block;
-    width: 100px;
+.formulario button{
+    margin-top:30px ;
+    width: 80px;
     height: 40px;
-    background-color: rgb(255, 255, 255);
-    color: black;
-    margin-top: 8px;
-}    
+    border-radius: 6px;
+    background-color: rgb(189, 82, 11);
+    border: none;
+}
 /*LOCATIONS*/
-.img-mapa img{
+.img-mapa{
     width: 80vw;
     height: 80vh;
     margin: auto;
+    background-image: url(https://popmenucloud.com/cdn-cgi/image/width%3D1440%2Cheight%3D1440%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/ckfbqnia/4966d5b9-451b-473e-b693-828ce41e1229.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 100px;
 }
 /*FOOTER*/
 footer{
     background: rgb(0, 0, 0);
-    height: 500px;
+    height: 250px;
 }
 .footer{
     display: grid;
@@ -149,60 +183,185 @@ footer{
     color:rgb(189, 82, 11) ;
 }
 .footer p{
-    color: beige;
-    font-size: 18px;
-    margin-left: 0;
-    margin-right: 0;
-    
+    color: white;
+    font-size: 18px;  
+    margin: -1px;  
 }
 .iconos-footer-ul{
     display: flex;
     flex-direction: row;
-    justify-content: start;
-   
+    justify-content: start;  
 }
 .iconos-footer-ul li{
     display: flex;
     font-size: 20px;
     margin: 7px;
-
 }
 .iconos-footer-ul i{
     color:rgb(189, 82, 11);
 }
-.hr{
-    height: 2px;
-    border-color: rgb(212, 208, 208);
-    width: 100%;
-}
-/*MOBILE*/
-@media screen and (max-width:600px){
+
+/*MOBILE
+@media screen and(min-width:480px){
+    h1 , h2{
+        font-size: 15px;
+        text-align: center;
+        padding: 10px;
+    }
+    p{
+        font-size: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
     .responsive-ul{
         flex-direction: column;
+    }
+    .responsive-li{
+        font-size: 15px;
+        padding: 15px;
+    }
+    .d-block{
+        width: 100%;
+        height: 200px;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(3,100px);
+        gap:5% ;
+        justify-content: center;
+    }
+    .footer h3{
+        color: white;
+        padding-top: 22px;
+        font-size: 15px;
+        color:rgb(189, 82, 11) ;
+    }
+    .footer p{
+        color: white;
+        font-size: 12px;  
+        margin: -1px;  
+    }
+    .iconos-footer-ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;  
+    }
+    .iconos-footer-ul li{
+        font-size: 12px;
+        margin: 4px;
+    }
+    .iconos-footer-ul i{
+        color:rgb(189, 82, 11);
+    }
+}*/
+
+/*TABLETAS*/
+@media screen and (max-width:600px){
+    h1 , h2{
+        font-size: 18px;
+        text-align: center;
+        padding: 10px;
+    }
+    p{
+        font-size: 15px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .logo{
+        margin: auto;
+    }
+    .responsive-ul{
+        flex-direction: column;
+    }
+    .responsive-li{
+        font-size: 17px;
+        padding: 15px;
+    }
+    .d-block{
+        width: 100%;
+        height: 300px;
     }
     .sugerencias img{
         width: 100px;
         height: 100px;
     }
-    h1, h2{
-        font-size: 15px;
-        text-align: center;
-        padding: 5px;
+    .menu-opciones{
+        flex-direction: column;
     }
-    p{
-        font-size: 12px;
+    .menu-opciones div{
+        margin: 0;
     }
-    .portada-inicio img{
+    .menu-opciones img{
         width: 100%;
         height: 300px;
     }
-    footer{
-        background: rgb(51, 51, 51);
+
+    form{
+        padding-left: 30px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        background: black;
+        width: 400px;
+        border-radius: 5px;
     }
-    
-    
-    
+    .formulario{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    input, select{
+        display:flex;
+        padding: 10px;
+        border: 2px solid rgb(189, 82, 11);
+        border-radius: 5px;
+        width:300px;
+        margin-top: 20px;
+        height: 40px;
+        margin: 10px;
+    }
+    label{
+        color: white;
+        margin: 10px;
+    }
+    .formulario button{
+        margin-top:20px ;
+        width: 80px;
+        height: 40px;
+        border-radius: 6px;
+        background-color: rgb(189, 82, 11);
+        border: none;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(3,100px);
+        gap:5% ;
+        justify-content: center;
+    }
+    .footer h3{
+        color: white;
+        padding-top: 22px;
+        font-size: 15px;
+        color:rgb(189, 82, 11) ;
+    }
+    .footer p{
+        color: white;
+        font-size: 12px;  
+        margin: -1px;  
+    }
+    .iconos-footer-ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;  
+    }
+    .iconos-footer-ul li{
+        font-size: 12px;
+        margin: 4px;
+    }
+    .iconos-footer-ul i{
+        color:rgb(189, 82, 11);
+    }
 }
+    
+
 
 
 
